@@ -1,11 +1,14 @@
 "use client"
 
+import { Suspense } from "react"
 import { CityProvider } from "@/components/city-context"
 
 export function Providers({ children }: { children: React.ReactNode }) {
     return (
-        <CityProvider>
-            {children}
-        </CityProvider>
+        <Suspense fallback={null}>
+            <CityProvider>
+                {children}
+            </CityProvider>
+        </Suspense>
     )
 }
