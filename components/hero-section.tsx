@@ -6,6 +6,8 @@ import { CheckCircle } from "lucide-react"
 
 import { useCity } from "@/components/city-context"
 
+import { CitySelector } from "@/components/city-selector"
+
 export function HeroSection() {
   const { whatsappLink } = useCity()
   return (
@@ -22,11 +24,15 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-6">
+            <div className="md:hidden w-full max-w-xs">
+              <CitySelector />
+            </div>
+
             <span className="inline-flex items-center gap-2 text-green-600 text-sm font-medium bg-green-100 px-3 py-1 rounded-full">
               <CheckCircle className="w-4 h-4" /> Grupo VIP no WhatsApp
             </span>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
               Garanta Descontos Absurdos em Produtos
             </h1>
 

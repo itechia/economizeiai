@@ -2,8 +2,7 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet"
-import { Menu, MessageCircle } from "lucide-react"
+import { MessageCircle } from "lucide-react"
 
 
 import { CitySelector } from "@/components/city-selector"
@@ -43,48 +42,8 @@ export function Header() {
             Entrar no WhatsApp
           </a>
         </Button>
-
-        {/* Mobile Menu */}
-        <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Abrir menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <SheetHeader>
-                <SheetTitle>Economize AI</SheetTitle>
-                <SheetDescription>Navegue pelo menu</SheetDescription>
-              </SheetHeader>
-              <nav className="flex flex-col gap-4 mt-8">
-                <div className="mb-2">
-                  <CitySelector />
-                </div>
-                <a
-                  href="#servicos"
-                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                >
-                  Serviços
-                </a>
-                <a
-                  href="#vantagens"
-                  className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                >
-                  Vantagens
-                </a>
-                <Button asChild className="rounded-full w-full font-semibold mt-4 bg-green-600 hover:bg-green-700">
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="w-5 h-5 mr-2" />
-                    Entrar no WhatsApp
-                  </a>
-                </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
-        </div>
       </div>
     </header>
+
   )
 }

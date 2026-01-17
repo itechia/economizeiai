@@ -33,7 +33,7 @@ export function CitySelector() {
                         variant="outline"
                         role="combobox"
                         aria-expanded={open}
-                        className="w-[200px] justify-between h-9 text-sm"
+                        className="w-full md:w-[200px] justify-between h-9 text-sm"
                     >
                         {currentCity
                             ? cities.find((city) => city.id === currentCity.id)?.name
