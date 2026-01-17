@@ -23,13 +23,13 @@ export function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="md:hidden w-full max-w-xs">
               <CitySelector />
             </div>
 
             <span className="inline-flex items-center gap-2 text-green-600 text-sm font-medium bg-green-100 px-3 py-1 rounded-full">
-              <CheckCircle className="w-4 h-4" /> Grupo VIP no WhatsApp
+              <CheckCircle className="w-4 h-4" /> Grupo no WhatsApp
             </span>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
@@ -40,14 +40,14 @@ export function HeroSection() {
               Não perca tempo procurando. Receba cupons e ofertas relâmpago da Amazon, Mercado Livre e Shopee direto no seu WhatsApp.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
               <Button
                 asChild
                 size="lg"
                 className="rounded-full px-8 py-6 font-semibold text-base shadow-xl hover:shadow-2xl transition-all hover:scale-105 bg-green-600 hover:bg-green-700"
               >
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                  Entrar no Grupo VIP
+                  Entrar no Grupo do WhatsApp
                 </a>
               </Button>
               <Button
