@@ -42,6 +42,12 @@ export function Header() {
             Entrar no WhatsApp
           </a>
         </Button>
+        <Button asChild size="sm" className="md:hidden rounded-full font-semibold shadow-lg bg-green-600 hover:bg-green-700">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="w-4 h-4 mr-1" />
+            WhatsApp
+          </a>
+        </Button>
       </div>
     </header>
 
