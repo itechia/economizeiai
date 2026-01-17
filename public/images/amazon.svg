@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="22" fill="#FF9900"/>
+  <path d="M14 28c4 4 12 6 20 2" stroke="#232F3E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M32 27l3 3-3 3" stroke="#232F3E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="24" y="22" font-family="Arial" font-size="10" font-weight="bold" fill="#232F3E" text-anchor="middle">a</text>
+</svg>
